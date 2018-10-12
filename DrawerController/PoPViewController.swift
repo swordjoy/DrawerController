@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PoPViewController.swift
 //  DrawerController
 //
 //  Created by Liu Yang on 2018/10/12.
@@ -8,16 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class PoPViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
+
+        view.backgroundColor = UIColor.blue
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        AppDelegate.main.openDrawer()
+        AppDelegate.main.closeDrawer()
     }
-
+    
 }
-

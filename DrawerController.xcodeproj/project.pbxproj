@@ -12,6 +12,8 @@
 		0179EDF1217045A90084B195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0179EDEF217045A90084B195 /* Main.storyboard */; };
 		0179EDF3217045AB0084B195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0179EDF2217045AB0084B195 /* Assets.xcassets */; };
 		0179EDF6217045AB0084B195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0179EDF4217045AB0084B195 /* LaunchScreen.storyboard */; };
+		0179EE0021706CA70084B195 /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179EDFF21706CA70084B195 /* DrawerController.swift */; };
+		0179EE022170837E0084B195 /* PoPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179EE012170837E0084B195 /* PoPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0179EDF2217045AB0084B195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0179EDF5217045AB0084B195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0179EDF7217045AB0084B195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0179EDFF21706CA70084B195 /* DrawerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerController.swift; sourceTree = "<group>"; };
+		0179EE012170837E0084B195 /* PoPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoPViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		0179EDDF217045A90084B195 = {
 			isa = PBXGroup;
 			children = (
+				0179EDFE21706C8F0084B195 /* Source */,
 				0179EDFD217045AF0084B195 /* Supporting Files */,
 				0179EDEA217045A90084B195 /* DrawerController */,
 				0179EDE9217045A90084B195 /* Products */,
@@ -57,6 +62,7 @@
 			children = (
 				0179EDEB217045A90084B195 /* AppDelegate.swift */,
 				0179EDED217045A90084B195 /* ViewController.swift */,
+				0179EE012170837E0084B195 /* PoPViewController.swift */,
 				0179EDEF217045A90084B195 /* Main.storyboard */,
 			);
 			path = DrawerController;
@@ -70,6 +76,14 @@
 				0179EDF7217045AB0084B195 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0179EDFE21706C8F0084B195 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0179EDFF21706CA70084B195 /* DrawerController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0179EE022170837E0084B195 /* PoPViewController.swift in Sources */,
 				0179EDEE217045A90084B195 /* ViewController.swift in Sources */,
 				0179EDEC217045A90084B195 /* AppDelegate.swift in Sources */,
+				0179EE0021706CA70084B195 /* DrawerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LZXJG2N9H;
-				INFOPLIST_FILE = DrawerController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LZXJG2N9H;
-				INFOPLIST_FILE = DrawerController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
